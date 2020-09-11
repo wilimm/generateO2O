@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>com.taobao.wuzheng</id>
+    <name>GenerateO2O</name>
+    <version>1.0</version>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="generateO2O" class="com.hz.yk.GenerateAction" text="generateO2O" description="auto gnenerates O2O">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
